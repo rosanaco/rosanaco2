@@ -1,0 +1,212 @@
+/* En este archivo escriban su CSS */
+
+
+
+/* Fonts */
+
+/* Importar aquí la font */
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+
+
+/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
+
+*  cuyos valores asigna por defecto el navegador.
+
+*/
+
+
+
+/* Reset */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+    /* Para que el scrolleo en la one page sea suave */
+
+    scroll-behavior: smooth;
+
+}
+
+
+
+/* Para quitar los puntos a los items de listas */
+
+ul {
+
+    list-style: none;
+
+}
+
+
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+
+*/
+
+main {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+img{
+
+  max-width: 100%;
+
+}
+
+
+
+body{font-family: 'Raleway', sans-serif;
+    background-color: #fbfbfb;
+    font-size:18px;
+    text-align: center;
+    line-height: 1.2;
+    color: #0f0e0c;}
+
+p{margin:16px 0;}
+
+#contacto{display: flex; 
+    flex-direction: column; 
+    background-color: rgba(204, 84, 28, 0.3);
+    border-radius: 10px;
+    max-width: 400px; 
+    margin: 0 auto;
+    padding:20px; 
+    box-sizing: border-box;
+    
+}
+
+.boton{display:inline-block; 
+    margin: 10px 0; 
+    background-color: #da460c;
+    color: #fbfbfb;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;}
+
+#container{background-color: #e6d5d5;
+           position: relative;
+           width: 80px;
+           height: 40px;
+           box-shadow: inset 4px 4px 6px #cecece,
+                       inset -4px -4px -6px #fff;
+           margin-top: 3px;
+           border-radius: 25px;
+           cursor:pointer;}
+
+.toggle{position:absolute;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        transform: scale(.7);
+        background-color: rgba(204, 84, 28, 0.3);
+        border-radius:25px;
+        box-shadow:5px 5px 5px #c4c4c4,
+                    -5px -5px -5px #fff;}
+
+#container.active.toggle{ left: 40 px;}
+
+body.active{background-color: #a0a0a0;}                 
+
+.boton:hover, .active {background-color:#cc0b0b;
+    color:#0e0101; 
+    transition: background-color 0.3s;}
+
+footer{display: flex; 
+        align-items: center;
+        background-color: #da460c;
+        color: #fbfbfb;
+        justify-content: center; 
+        height: 90px;
+        ;}
+
+header{display:flex;
+    align-items: center;
+    padding: 16px;
+     width: 100%; 
+     height: 90px; 
+    justify-content:space-between; 
+    top: 0;
+    left: 0;
+    box-shadow: 0 3px 10px -5px ;}
+
+article{padding: 20px; 
+    text-align:center;}
+
+#logo{width: 180px}
+
+#MENU{display: flex; 
+    font-size: 20px;}
+
+ul li{padding: 15px;
+     display: inline-block;}
+
+ul li:hover{background-color: #da460c;
+    color:#fbfbfb; 
+    transition: background-color 0.3s;}
+
+h1{font-size: 36px;
+    text-align: center;}
+
+h2{font: size 28px;}
+
+#inicio{display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;}
+
+.foto{border-radius: 40%; 
+    width: 400px;}
+
+#ICONOS{display:flex;
+    flex-direction:row; 
+    justify-content: center;
+    align-items:center;
+    width:auto;}
+
+.MAIL{width: 90px;}
+.GIT{width: 90px;}
+.LINKEDIN{width: 90px}
+
+
+@media (min-width:1024px) {
+section#inicio{flex-direction: row;
+               margin-bottom: 300px;}
+
+article.presentación{text-align: left; width: 50%;}
+
+h1{font-size: 48px;text-align: left;}
+
+h2{font-size: 32px;}
+
+footer{margin-top: 100px;}
+
+}
+
